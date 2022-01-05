@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/uploads_files_2520949_donut.obj-a9e168e032d1da8b0162f396709b2095.mesh"
+
+[deps]
+
+files=[ "res://.import/uploads_files_2520949_donut.obj-a9e168e032d1da8b0162f396709b2095.mesh" ]
+
+source_file="res://Models/uploads_files_2520949_donut.obj"
+dest_files=[ "res://.import/uploads_files_2520949_donut.obj-a9e168e032d1da8b0162f396709b2095.mesh", "res://.import/uploads_files_2520949_donut.obj-a9e168e032d1da8b0162f396709b2095.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Models/mod2/PinkDonut.gltf" type="PackedScene" id=1]
+
+[sub_resource type="CylinderShape" id=14]
+
+[node name="RigidBodyPinkDonut" type="RigidBody"]
+transform = Transform( 1, 5.6898e-09, -2.32831e-09, 9.92259e-10, 1, 6.98492e-10, -4.65661e-09, -6.51926e-09, 0.999999, -3.09271, 1.56446, 0.639855 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.0865563, -8.98946e-05, -2.43512e-06, 0.000465222, 0.0167253, 0.000198247, 1.2927e-06, -3.61582e-05, 0.0917067, -0.218363, 0.0292268, 0.139296 )
+shape = SubResource( 14 )
+
+[node name="PinkDonut" type="Spatial" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 4.76939e-09, 0, -4.6075e-09, 1, -1.16415e-09, -9.31323e-10, 4.65661e-10, 1, -0.218026, -0.00306535, 0.139219 )

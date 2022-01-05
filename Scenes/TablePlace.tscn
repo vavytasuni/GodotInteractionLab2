@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Geometry/TeleportLocation.glb" type="PackedScene" id=1]
+[ext_resource path="res://PlaceChairsOnTable.gd" type="Script" id=2]
+
+[sub_resource type="BoxShape" id=1]
+
+[node name="PlaceChairsOnTable" type="Area"]
+transform = Transform( 6.39158, -0.00228368, 0.0018086, 0.0239057, 0.0790091, 0.00711183, -0.0064678, -0.00217766, 1.99022, -0.376259, 0.838876, -2.21606 )
+script = ExtResource( 2 )
+target_node = "StaticBodyChair"
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.16371, 0.12965, -0.00418984, -0.0451627, 0.469943, 0.00197119, 0.001488, -0.000735668, 0.520795, 0.029603, -0.143928, -0.00967717 )
+visible = false
+shape = SubResource( 1 )
+
+[node name="TeleportLocation" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.582019, -7.39021e-09, 2.91038e-11, 1.78698e-08, 1, -7.45058e-09, 0, 0, 0.535596, 2.04369e-05, -0.314107, -0.000439823 )
+
+[connection signal="body_entered" from="." to="." method="_on_PlaceChairsOnTable_body_entered"]
+[connection signal="body_shape_entered" from="." to="." method="_on_PlaceChairsOnTable_body_shape_entered"]

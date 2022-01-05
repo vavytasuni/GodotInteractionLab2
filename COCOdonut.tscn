@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Models/mod2/Donut1.glb" type="PackedScene" id=1]
+
+[sub_resource type="CylinderShape" id=1]
+radius = 0.520837
+height = 0.456361
+
+[node name="RigidBodyCoco" type="RigidBody"]
+transform = Transform( 1, 1.14596e-10, 0, 5.27507e-11, 1, 1.39698e-09, -1.39698e-09, -2.79397e-09, 1, -2.79569, 1.56089, 1.01153 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.139235, -3.32151e-05, -0.000281764, 3.3532e-05, 0.130901, 0.000220149, 0.00041055, -0.000327132, 0.0955387, -0.351984, 0.0563707, -0.196382 )
+shape = SubResource( 1 )
+
+[node name="Donutcoco" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 1.11868e-10, 0, 5.27507e-11, 1, 1.39698e-09, -1.39698e-09, -2.79397e-09, 1, -0.213715, 0.0256006, -0.196679 )

@@ -1,0 +1,22 @@
+Table chair staking:
+	Place chair on table.
+	Place interigation chair on table.
+	Stack chair on top of the first one.
+
+Trash Out:
+	Throw first trashbag to the void
+	Throw second trashbag to the void
+	(Creates key)
+
+Unlock Door:
+	Take key
+	Put to the door hole
+	Press "d" and turn key  
+
+DonutTower:
+	Place pink donut on table.
+	Place coco donut on pink donut.
+	Place pink donut on coco donut. 
+
+
+
